@@ -8,7 +8,6 @@ class ProductDetail extends React.Component{
         const product = products.find(product => product.slug ==slug);
         return (
             <Layout>
-            <div className="container">
                 <div className="columns">
                     <div className="column is-12">
                         <nav className="breadcrumb" aria-label="breadcrumbs">
@@ -40,7 +39,6 @@ class ProductDetail extends React.Component{
                         </div>
                     </div>
                 </div>
-            </div>
             </Layout>
         )
     }

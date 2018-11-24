@@ -5,7 +5,8 @@ import Layout from "./Layout";
 
 class ProductList extends React.Component{
     render(){
-        return <Layout>
+        return (
+        <Layout>
             <div className="columns">
               <div className="column is-full">
                 <div>
@@ -42,7 +43,8 @@ class ProductList extends React.Component{
                 </div>
               </div>
             </div>
-          </Layout>;
-    }
+          </Layout>
+)    
+}
 }
 export default ProductList;
