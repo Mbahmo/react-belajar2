@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class ProductList extends React.Component{
     render(){
@@ -30,7 +31,7 @@ class ProductList extends React.Component{
                             <h3 className="title">Our Products</h3>
                             <div className="columns">
                                 <div className="column">
-                                    <a href="/product/rustic-plastic-bacon">
+                                    <Link to="/product/rustic-plastic-bacon">
                                         <div className="card">
                                             <div className="card-image">
                                                 <figure className="image is-4by3">
@@ -50,7 +51,7 @@ class ProductList extends React.Component{
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="column">
                                     <a href="/product/ergonomic-cotton-chips">

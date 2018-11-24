@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import{BrowserRouter as Router,Route,Link} from "react-router-dom";
+
 import ProductList from './ProductList';
+import ProductDetail from './ProductDetail';
 
 class App extends React.Component {
         render() {
             return(
-                <div>
-                    <ProductList/>
+                <Router>
+                    <div>
+                        <Route path="/" exact component={ProductList} />
+                        <Route path="/product" component={ProductDetail} />
                 </div>
+                </Router>
                 )
         }
     }
